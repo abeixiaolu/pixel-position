@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+
+<body>
+  <h1 class="text-3xl font-bold underline text-rose-300"> Hello world! </h1>
+  <p>Welcome to our application. Please explore the features we offer.</p>
+</body>
+
+</html>
