@@ -1,1 +1,1 @@
-<a href="#" class="px-2 py-0.5 text-xs border border-white/10 rounded-full">{{$slot}}</a>
+<a href="#" class="px-2 py-0.5 text-2xs border border-white/10 rounded-full">{{$slot}}</a>

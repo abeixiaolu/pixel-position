@@ -1,2 +1,8 @@
 @import "tailwindcss";
 @source "../views";
+
+@theme {
+    --text-2xs: 0.625rem;
+    --default-font-family: "Dank Mono", sans-serif;
+    --color-black: #060606;
+}

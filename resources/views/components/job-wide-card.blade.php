@@ -1,6 +1,6 @@
-<div class="flex bg-white/10 rounded-xl p-4 gap-4">
-  <div class="size-16 overflow-hidden rounded-md shrink-0">
-    <img src="https://placehold.co/64" alt="">
+<div class="flex bg-white/10 rounded-xl p-4 gap-4 border border-transparent hover:border-blue-800 group transition">
+  <div class="size-[90px] overflow-hidden rounded-md shrink-0">
+    <x-employer-logo width="90" />
   </div>
   <div class="flex flex-col items-start space-y-2 flex-1">
     <div class="flex items-center justify-between w-full">
@@ -10,12 +10,13 @@
         <x-tag>22h</x-tag>
       </div>
     </div>
-    <div class="text-xl font-medium">Full Stack Laravel Developer</div>
+    <div class="text-xl font-medium group-hover:text-blue-600 transition">Full Stack Laravel Developer</div>
     <div class="flex items-center justify-between w-full mt-4">
       <p class="text-sm text-white/60">Full Time - From $60,000</p>
       <div class="flex gap-2">
-        <x-button>Frontend</x-button>
-        <x-button>Backend</x-button>
+        <x-button size="small">Apply Now</x-button>
+        <x-button size="small">Save Job</x-button>
+        <x-button size="small">Share</x-button>
       </div>
     </div>
   </div>
