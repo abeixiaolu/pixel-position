@@ -8,9 +8,29 @@
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body>
-  <h1 class="text-3xl font-bold underline text-rose-300"> Hello world! </h1>
-  <p>Welcome to our application. Please explore the features we offer.</p>
+<body class="bg-black text-white">
+  <header class="flex items-center justify-between p-4">
+    <a href="/">
+      <h1>
+        <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="Logo">
+      </h1>
+    </a>
+
+    <nav>
+      <ul class="flex space-x-8">
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Salaries</a></li>
+        <li><a href="#">Companies</a></li>
+      </ul>
+    </nav>
+
+    <button>Post a Job</button>
+  </header>
+
+  <main class="max-w-6xl mx-auto p-8">
+    {{ $slot }}
+  </main>
 </body>
 
 </html>
