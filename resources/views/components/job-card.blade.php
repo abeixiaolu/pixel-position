@@ -7,11 +7,11 @@
   <div class="flex items-end justify-between w-full mt-auto">
     <div class="flex gap-2 flex-wrap">
       @foreach ($job->tags as $tag)
-      <x-button :$tag size="small">{{ $tag }}</x-button>
-    @endforeach
+        <x-button :$tag size="small">{{ $tag }}</x-button>
+      @endforeach
     </div>
     <div class="size-12 overflow-hidden rounded-md shrink-0">
-      <x-employer-logo width="48" />
+      <x-employer-logo width="48" :employer="$job->employer" />
     </div>
   </div>
 </x-panel>

@@ -25,7 +25,22 @@
       </ul>
     </nav>
 
-    <button>Post a Job</button>
+    @auth
+      <div class="flex gap-4">
+        <a href="/jobs/create">Post a Job</a>
+        <form action="/logout" method="POST">
+          @csrf
+          @method('DELETE')
+          <button type="submit">Logout</button>
+        </form>
+      </div>
+    @endauth
+    @guest
+      <div class="flex gap-4">
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+      </div>
+    @endguest
   </header>
 
   <main class="max-w-6xl mx-auto p-8">
