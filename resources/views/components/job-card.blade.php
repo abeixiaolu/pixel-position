@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center space-y-4 bg-white/10 rounded-xl p-4 border border-transparent hover:border-blue-800 group">
+<x-panel class="flex-col items-center">
   <span class="text-sm self-start text-white/80">GovExec</span>
   <div class="text-xl font-medium text-center group-hover:text-blue-600">Full Stack Laravel Developer</div>
   <p class="text-sm text-white/70">Full Time - From $60,000</p>
@@ -12,4 +12,4 @@
       <x-employer-logo width="48" />
     </div>
   </div>
-</div>
+</x-panel>
